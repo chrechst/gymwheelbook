@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>gymWHEEL</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+
+		<!-- Header -->
+		<header>
+			<div class="logo">
+				<div class="logo-text">
+					<a href="index.html"><span>gym</span>WHEEL</a>
+				</div>
+			</div>
+			<div class="menu-toggle"></div>
+				<ul class="nav">
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+		</header>
+
+		<!-- JQuery -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.menu-toggle').click(function(){
+					$('.menu-toggle').toggleClass('active')
+					$('header ul').toggleClass('active')
+				})
+			})
+		</script>
+
+		<!---->
+
+		<!-- Slick Carousel-->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.post-wrapper').slick({
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 2000,
+					nextArrow: $('next'),
+					prevArrow: $('prev'),
+				})
+			
+			})
+		</script>
+
+		<!---->
+		
+		<!-- Main -->
+		<div class="post-container">
+			<h1><em>gym</em>WHEEL launches</h1><br>
+			<h4>Jul 2, 2020 | Posted by: Cheyenne Rechsteiner</h4><br>
+			<p>Welcome to <em>gym</em>WHEEL! </p> <br>
+			<p> I'm Cheyenne, a 26 years old wheel gymnastics enthusiast. I compete internationally for Switzerland and am the head coach of Liestal Wheel Gymnastics Club.</p><br>
+			<p> The aim of this blog is to complement my upcoming wheel gymnastics book. It is the medium through which I will answer all your questions about the book or wheel gymnastics in general. Further, I intend to post articles on selected topics that did not find their way into the book, but I deem valuable nevertheless. Please feel free to contact me with questions, suggestions or your own contributions. </p><br>
+			<p> It's my pleasure to serve you. Let this adventure begin!</p>
+		</div>
+		<!---->
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-social-icons">
+				<ul>
+					<li><a href="https://www.instagram.com/gymwheelbook" target="blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+					<li><a href="https://www.facebook.com/cheyenne.rechsteiner" target="blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+					<li><a href="https://www.youtube.com/channel/UCNgCis2xSq7fRMG91km_PIQ" target="blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-menu-one">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-bottom">
+				<p>
+					&copy; 2020 Cheyenne Rechsteiner
+				</p>
+			</div>
+		</footer>
+		<!---->
+
+	</body>
+	
+</html>
+
